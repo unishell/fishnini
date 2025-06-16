@@ -1,0 +1,125 @@
+---
+// index.astro
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fishnini Tents – Magical Outdoor Glamping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      header {
+        background: url('/hero-bg.jpg') center/cover no-repeat;
+        height: 100vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 2rem;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+      }
+      section {
+        padding: 4rem 2rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+      .btn {
+        background: #fff;
+        color: #000;
+        padding: 0.8rem 1.5rem;
+        border-radius: 6px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1.5rem;
+        font-weight: bold;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+      .card {
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background: #222;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Welcome to Fishnini Tents</h1>
+      <p>Glamping tents that turn ordinary nights into magical experiences. Weddings, festivals, retreats – we’ve got you covered.</p>
+      <a class="btn" href="#contact">Book Now</a>
+    </header>
+
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Fishnini is all about creating unforgettable outdoor stays. Whether you're planning a rustic wedding, a weekend retreat with friends,
+        or a boutique festival, our luxurious bell tents offer the perfect blend of comfort and style. We handle everything – from setup to pack-down – so you can focus on enjoying the moment.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Wedding Tents</h3>
+          <p>Make your special day even more memorable with dreamy canvas tents for your guests or private honeymoon hideaways.</p>
+        </div>
+        <div class="card">
+          <h3>Festival Glamping</h3>
+          <p>Forget the muddy sleeping bags. Arrive to a fully set-up tent with proper beds, lights, and cozy decorations.</p>
+        </div>
+        <div class="card">
+          <h3>Retreat Packages</h3>
+          <p>Perfect for yoga retreats or corporate escapes. Custom layouts and decor to match your event vibe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+      <div class="grid">
+        <img src="/tent1.jpg" alt="Tent 1" style="width:100%; border-radius: 8px;" />
+        <img src="/tent2.jpg" alt="Tent 2" style="width:100%; border-radius: 8px;" />
+        <img src="/tent3.jpg" alt="Tent 3" style="width:100%; border-radius: 8px;" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: hello@fishnini.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <a class="btn" href="mailto:hello@fishnini.com">Send Email</a>
+    </section>
+
+    <footer>
+      <p>© 2025 Fishnini Tents. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
