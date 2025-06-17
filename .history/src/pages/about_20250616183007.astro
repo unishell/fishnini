@@ -1,0 +1,44 @@
+---
+// src/pages/about.astro
+layout: "../layouts/BaseLayout.astro"
+title: "About"
+---
+
+<section class="relative min-h-screen w-full bg-black text-white font-serif overflow-hidden">
+  <!-- 背景图 -->
+  <img src="/images/about-hero.png" alt="Enchanted Forest" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+  <!-- 渐变遮罩 + 毛玻璃 -->
+  <div class="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-indigo-900/50 to-black/80 backdrop-blur-md"></div>
+
+  <!-- 星星特效层 -->
+  <div class="absolute inset-0 z-20 pointer-events-none starfield"></div>
+
+  <!-- 正文内容 -->
+  <div class="relative z-30 max-w-3xl mx-auto px-6 py-28 text-center animate-fade-in-up space-y-10">
+
+    <h1 class="text-5xl md:text-6xl font-extrabold text-yellow-100 drop-shadow-glow tracking-wider">
+      ✧ Fishnini ✧
+    </h1>
+
+    <p class="text-lg md:text-xl text-purple-200 leading-loose">
+      You awaken with no memory of who you were —  
+      only a feeling: soft grass beneath your fingers, stars whispering above,  
+      and a name etched in light... <span class="text-pink-300 font-bold">Fishnini</span>.
+    </p>
+
+    <p class="text-md md:text-lg text-pink-200 italic">
+      This world didn’t exist until you arrived.  
+      Or maybe... you’ve been here before, and forgot.
+    </p>
+
+    <p class="text-base md:text-lg text-indigo-300 leading-relaxed">
+      Fishnini is a realm where reality and dream coalesce.  
+      Wolves ponder philosophy.  
+      Lanterns float on forgotten lakes.  
+      And every path leads not outward — but inward.
+    </p>
+
+    <div class="pt-8">
+      <a href="/stories" class="inline-block px-8 py-3 bg-pink-500/90 hover:bg-pink-400 text-white rounded-full shadow-xl transition-all duration-300 tracking-wide">
+        ✧ Begin Y

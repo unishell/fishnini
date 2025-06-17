@@ -1,0 +1,59 @@
+---
+// about.astro
+layout: ../layouts/Bas
+title: "About"
+---
+
+<section class="relative min-h-screen bg-black text-white overflow-hidden">
+  <!-- 背景图 -->
+  <img src="/images/enchanted-glade.png" alt="Mystic Forest"
+    class="absolute inset-0 w-full h-full object-cover opacity-60 z-0">
+
+  <!-- 星星粒子动画层 -->
+  <div class="absolute inset-0 z-10 pointer-events-none animate-pulse">
+    <div class="w-full h-full bg-gradient-to-br from-purple-900/30 via-indigo-700/20 to-pink-600/10 backdrop-blur-md"></div>
+  </div>
+
+  <!-- 正文内容 -->
+  <div class="relative z-20 px-8 py-20 max-w-4xl mx-auto text-center">
+    <h1 class="text-6xl font-extrabold text-pink-200 mb-6 drop-shadow-md animate-fade-in">Who is <span class="text-yellow-200">Fishnini</span>?</h1>
+    <p class="text-xl leading-relaxed text-purple-100 mb-12 animate-slide-up">
+      A whisper from the forest. A lantern in the mist. A memory that never was — and yet always has been.
+      <br><br>
+      Fishnini is a place of becoming. Here, you don’t escape the world — you reawaken in it.
+    </p>
+
+    <!-- 卡片 -->
+    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl max-w-3xl mx-auto animate-zoom-in">
+      <h2 class="text-3xl font-bold text-yellow-100 mb-4">✧ Rebirth Through Fantasy</h2>
+      <p class="text-lg text-purple-100">
+        In the realm of Fishnini, foxes don’t just run — they dream. Owls don’t just see — they remember. You, too, will find the part of you that once danced with stars.
+      </p>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <div class="mt-16">
+      <a href="#top" class="text-white bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 py-3 px-6 rounded-full shadow-lg hover:scale-105 transition-all duration-300">
+        ↑ Back to the Sky
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes zoom-in {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.animate-fade-in { animation: fade-in 1s ease-out forwards; }
+.animate-slide-up { animation: slide-up 1.2s ease-out forwards; }
+.animate-zoom-in { animation: zoom-in 1.5s ease-out forwards; }
+</style>

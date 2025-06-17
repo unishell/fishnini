@@ -1,0 +1,74 @@
+---
+layout: "../layouts/BaseLayout.astro"
+title: "About"
+---
+
+<section class="relative min-h-screen w-full text-white overflow-hidden font-serif">
+  <!-- 背景插图 -->
+  <img src="/images/about-hero.png" alt="Magical Forest" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+  <!-- 遮罩+光晕 -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-purple-900/50 to-black/80 backdrop-blur-sm z-10"></div>
+
+  <!-- 星空层 -->
+  <div class="absolute inset-0 z-20 pointer-events-none starfield"></div>
+
+  <!-- 内容区 -->
+  <div class="relative z-30 flex flex-col items-center justify-center text-center px-6 py-32 max-w-4xl mx-auto">
+    <h1 class="text-6xl md:text-7xl font-extrabold text-yellow-200 drop-shadow-lg animate-fade-in leading-tight">
+      Welcome to <span class="text-pink-300">Fishnini</span>
+    </h1>
+
+    <p class="mt-6 text-xl md:text-2xl text-white/90 animate-slide-up max-w-2xl leading-relaxed">
+      A world reborn in moonlight, where foxes sing and stars remember. You are not escaping — you are becoming.
+    </p>
+
+    <!-- 水晶卡片 -->
+    <div class="mt-12 bg-white/10 border border-white/20 backdrop-blur-xl rounded-3xl p-10 shadow-2xl animate-zoom-in">
+      <p class="text-white/90 text-lg leading-relaxed">
+        ✧ Here, the mist speaks your name.<br />
+        ✧ The wind remembers who you were.<br />
+        ✧ Welcome to your truest story.
+      </p>
+    </div>
+
+    <!-- 回到顶部 -->
+    <a href="#top" class="mt-16 bg-gradient-to-r from-pink-400 via-purple-500 to-yellow-300 text-black font-semibold px-8 py-3 rounded-full shadow-xl hover:scale-105 transition-transform duration-300">
+      ↑ Back to Top
+    </a>
+  </div>
+</section>
+
+<style>
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoom-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in { animation: fade-in 1s ease-out forwards; }
+.animate-slide-up { animation: slide-up 1.2s ease-out forwards; }
+.animate-zoom-in { animation: zoom-in 1.4s ease-out forwards; }
+
+.starfield {
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: twinkle 5s ease-in-out infinite;
+  opacity: 0.08;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.05; }
+  50% { opacity: 0.12; }
+}
+
+h1, p {
+  font-family: 'IM Fell English', serif;
+}
+</style>

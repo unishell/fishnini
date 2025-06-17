@@ -1,0 +1,83 @@
+---
+layout: "../layouts/BaseLayout.astro"
+title: "About"
+---
+
+<!-- About Page - Fishnini Fantasy World -->
+<section class="relative min-h-screen w-full text-white bg-black overflow-hidden font-serif">
+  <!-- Fullscreen Background Image -->
+  <img src="/images/about-hero.png" alt="Mystical Forest" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+  <!-- Overlay Gradient and Blur -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-purple-900/60 to-black/80 z-10 backdrop-blur-sm"></div>
+
+  <!-- Twinkling Star Layer -->
+  <div class="absolute inset-0 z-20 pointer-events-none starfield"></div>
+
+  <!-- Content Container -->
+  <div class="relative z-30 max-w-4xl mx-auto px-6 py-28 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-yellow-100 drop-shadow mb-6 animate-fade-in">
+      ✧ Welcome to <span class="text-pink-300">Fishnini</span> ✧
+    </h1>
+    <p class="text-lg md:text-xl text-purple-100 leading-relaxed mb-10 animate-slide-up">
+      A land reborn through starlight and memory. Here, foxes paint dreams and owls whisper names once lost. You are not escaping — you are remembering.
+    </p>
+
+    <!-- Glowing Scroll Card -->
+    <div class="bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl p-8 shadow-2xl max-w-3xl mx-auto animate-zoom-in">
+      <p class="text-white/90 text-lg leading-relaxed">
+        ✧ In the glades of Fishnini, every leaf tells your tale.<br />
+        ✧ The stars hum lullabies for forgotten hearts.<br />
+        ✧ You didn’t arrive by chance — the forest called you.
+      </p>
+    </div>
+
+    <!-- Button -->
+    <div class="mt-14">
+      <a href="#top" class="inline-block bg-gradient-to-r from-pink-400 via-purple-500 to-yellow-300 text-black font-semibold px-8 py-3 rounded-full shadow-xl hover:scale-105 transition-transform duration-300">
+        ↑ Back to Top
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoom-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in { animation: fade-in 1s ease-out forwards; }
+.animate-slide-up { animation: slide-up 1.2s ease-out forwards; }
+.animate-zoom-in { animation: zoom-in 1.4s ease-out forwards; }
+
+.starfield {
+  background-image: radial-gradient(white 0.8px, transparent 0.8px);
+  background-size: 30px 30px;
+  animation: twinkle 5s ease-in-out infinite;
+  opacity: 0.06;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.05; }
+  50% { opacity: 0.12; }
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', serif;
+}
+p {
+  font-family: 'IM Fell English', serif;
+}
+</style>
+
+<!-- Fonts to include in your BaseLayout <head> -->
+<!--
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English&display=swap" rel="stylesheet">
+-->

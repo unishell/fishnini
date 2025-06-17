@@ -1,0 +1,38 @@
+---
+// layouts/BaseLayout.astro
+const { title = "Fishnini" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fishnini – A fantasy world to awaken your soul" />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" href="/icons/star.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam&family=Inter:wght@400;600&display=swap" />
+  </head>
+  <body class="font-inter bg-gradient-to-br from-purple-950 via-indigo-900 to-black text-white min-h-screen flex flex-col">
+    
+    <!-- Navigation -->
+    <header class="w-full px-6 py-4 flex justify-between items-center shadow-md bg-black/30 backdrop-blur-sm fixed z-50">
+      <a href="/" class="text-3xl font-kalam text-yellow-200">Fishnini</a>
+      <nav class="space-x-6 text-lg font-medium">
+        <a href="/" class="hover:text-pink-300 transition">Home</a>
+        <a href="/about" class="hover:text-pink-300 transition">About</a>
+        <a href="/stories" class="hover:text-pink-300 transition">Stories</a>
+        <a href="/contact" class="hover:text-pink-300 transition">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main class="flex-grow pt-24">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/40 backdrop-blur-sm py-6 text-center text-sm text-white">
+      <p>&copy; {new Date().getFullYear()} Fishnini. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

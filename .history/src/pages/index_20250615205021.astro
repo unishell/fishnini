@@ -1,0 +1,184 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fishnini – Enter the Myth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --pink: #ffeef3;
+        --lavender: #f4edff;
+        --cream: #fffaf0;
+        --light: #fdfcfc;
+        --accent: #ff92b2;
+        --text: #333;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        background: var(--cream);
+        color: var(--text);
+      }
+
+      header {
+        background: url('/fairy-forest.jpg') center/cover no-repeat;
+        padding: 6rem 2rem;
+        text-align: center;
+        color: white;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+      }
+
+      header h1 {
+        font-family: 'Fredoka', cursive;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: auto;
+        line-height: 1.6;
+      }
+
+      .btn {
+        margin-top: 2rem;
+        background: white;
+        color: #333;
+        padding: 0.75rem 1.5rem;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: 0.3s;
+        display: inline-block;
+      }
+
+      .btn:hover {
+        background: #f2f2f2;
+      }
+
+      section {
+        padding: 4rem 2rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      section h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Fredoka', cursive;
+        margin-bottom: 2rem;
+      }
+
+      .icon-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: var(--light);
+        border-radius: 1.2rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        text-align: center;
+      }
+
+      .card h3 {
+        font-family: 'Fredoka', cursive;
+        font-size: 1.2rem;
+        margin: 1rem 0 0.5rem;
+      }
+
+      .card img {
+        width: 48px;
+        height: 48px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        background: #222;
+        color: #fff;
+        margin-top: 4rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Enter the Myth</h1>
+      <p>A fairytale not for children – but for wild-hearted, the thoughtful, the lost and free.</p>
+      <a class="btn" href="#about">Explore the World</a>
+    </header>
+
+    <section id="about">
+      <h2 class="icon-title">
+        <img src="/icons/book.png" alt="book" />
+        About the World
+      </h2>
+      <p style="text-align:center; max-width: 700px; margin: auto;">
+        Fishnini is not a fantasy to escape from life – it’s to awaken your soul. No heroes, only mirrors.
+      </p>
+    </section>
+
+    <section id="realms">
+      <h2>Realms You May Wander</h2>
+      <div class="grid">
+        <div class="card" style="background: #ffeef3;">
+          <img src="/icons/fox.png" alt="fox icon" />
+          <h3>Forest of Unlearning</h3>
+          <p>Lose your memories, lose your name – and maybe find something truer.</p>
+        </div>
+        <div class="card" style="background: #f4edff;">
+          <img src="/icons/castle.png" alt="castle icon" />
+          <h3>The Hollow Court</h3>
+          <p>Mask after mask, laughter without joy. What would you trade for truth?</p>
+        </div>
+        <div class="card" style="background: #ede6ff;">
+          <img src="/icons/moon.png" alt="moon icon" />
+          <h3>Mirrored Lake</h3>
+          <p>Reflections you cannot lie to. Ripples that rewrite your fate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quotes">
+      <h2>Whispers from the World</h2>
+      <div class="grid">
+        <div class="card" style="background: #fff3f8;">
+          <img src="/icons/crystal.png" alt="crystal icon" />
+          <p>“You cannot survive as they do. You are made of storms.”</p>
+        </div>
+        <div class="card" style="background: #fff2fe;">
+          <img src="/icons/star.png" alt="star icon" />
+          <p>“Freedom isn’t escape. It’s choosing to stay where truth hurts.”</p>
+        </div>
+        <div class="card" style="background: #ffeef3;">
+          <img src="/icons/potion.png" alt="potion icon" />
+          <p>“Not all monsters hide under beds. Some wear your smile.”</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Fishnini. Dream boldly, wander gently.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+// stories.astro
+---
+layout: ../layouts/BaseLayout.astro
+title: "Stories"
+---
+
+<section class="p-10 bg-fuchsia-100 text-gray-900" id="top">
+  <h1 class="text-4xl font-bold text-center mb-10 animate-fade-in">Stories from the Forest</h1>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-105 animate-slide-up">
+      <img src="/icons/fox.png" alt="Fox Icon" class="w-12 h-12 mb-4 floating-icon">
+      <h2 class="font-semibold text-xl mb-2">The Fox Who Forgot Her Name</h2>
+      <p>A curious creature wakes each morning with a different name, each one unlocking a memory she once buried...</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-105 animate-slide-up delay-100">
+      <img src="/icons/moon.png" alt="Moon Icon" class="w-12 h-12 mb-4 floating-icon">
+      <h2 class="font-semibold text-xl mb-2">The Moon That Grew Tired of Watching</h2>
+      <p>The moon descended to earth to understand what it had watched for millennia — only to fall in love...</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-105 animate-slide-up delay-200">
+      <img src="/icons/mirror.png" alt="Mirror Icon" class="w-12 h-12 mb-4 floating-icon">
+      <h2 class="font-semibold text-xl mb-2">The Mirror That Reflected Souls</h2>
+      <p>This mirror never showed your face — only the truth behind it. Some smashed it. Some smiled.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+.floating-icon {
+  animation: float 4s ease-in-out infinite;
+}
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+</style>
+ v pe m v k v dlight, owls whisper forgotten truths, and the air itself hums with wonder. This is where you came to be reborn — not as an escape, but as a redikoom-in
+r

@@ -1,0 +1,61 @@
+---
+// about.astro
+layout: /layouts/BaseLayout.astro
+title: "About"
+---
+
+<section class="min-h-screen bg-gradient-to-br from-violet-800 via-purple-600 to-indigo-700 px-6 py-24 text-white relative">
+  <!-- 顶部导航返回按钮 -->
+  <div class="absolute top-6 left-6 z-50">
+    <a href="/" class="text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg shadow transition-all">← Home</a>
+  </div>
+
+  <!-- 主内容区 -->
+  <div class="max-w-5xl mx-auto text-center animate-fade-in">
+    <h1 class="text-6xl font-bold mb-8 text-yellow-200 drop-shadow">About Fishnini</h1>
+    <p class="text-lg md:text-xl text-white/90 leading-relaxed mb-12">
+      In a forest where stars hum softly in the trees and dreams grow like glowing mushrooms, Fishnini is your second world.
+      <br class="hidden md:block">
+      Not an escape — a rediscovery. Not a fantasy — a new truth.
+    </p>
+    
+    <!-- 幻想插画 -->
+    <div class="flex justify-center mb-12">
+      <img src="/images/enchanted-glade.png" alt="Enchanted Forest" class="rounded-2xl shadow-2xl border-4 border-white/20 max-w-full md:max-w-3xl animate-zoom-in">
+    </div>
+
+    <!-- 卡片介绍区块 -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-md border border-white/10 shadow-lg">
+        <h2 class="text-2xl font-semibold text-yellow-100 mb-2">🌙 The Moonlit Fox</h2>
+        <p class="text-white/80">She paints your dreams in silver and gold, walking softly where no path dares go.</p>
+      </div>
+      <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-md border border-white/10 shadow-lg">
+        <h2 class="text-2xl font-semibold text-yellow-100 mb-2">🦉 The Knowing Owl</h2>
+        <p class="text-white/80">He remembers your forgotten questions — and teaches you how to listen again.</p>
+      </div>
+    </div>
+
+    <!-- 回顶部按钮 -->
+    <div class="mt-16">
+      <a href="#top" class="inline-block bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-yellow-100 transition-all">↑ Back to Top</a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes zoom-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 1.2s ease-out forwards;
+}
+.animate-zoom-in {
+  animation: zoom-in 1s ease-out forwards;
+}
+</style>

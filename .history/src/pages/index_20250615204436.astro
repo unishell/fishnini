@@ -1,0 +1,195 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fishnini – A Fairytale World for Free Spirits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fffdf6;
+        color: #333;
+        line-height: 1.7;
+      }
+
+      header {
+        background: url('/fairy-forest.jpg') center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        position: relative;
+      }
+
+      nav {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        right: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffc;
+      }
+
+      header h2 {
+        font-size: 3rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 1rem;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      }
+
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      }
+
+      .btn {
+        background-color: white;
+        color: black;
+        padding: 0.8rem 1.5rem;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #f2f2f2;
+      }
+
+      section {
+        padding: 5rem 2rem;
+        max-width: 960px;
+        margin: auto;
+      }
+
+      section h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #222;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        border: 1px solid #eee;
+      }
+
+      .card p {
+        margin: 0;
+      }
+
+      footer {
+        background: #111;
+        color: #eee;
+        padding: 2rem;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <h1>Fishnini</h1>
+        <div>
+          <a href="#world">World</a>
+          <a href="#realms">Realms</a>
+          <a href="#quotes">Whispers</a>
+        </div>
+      </nav>
+      <h2>Enter the Myth</h2>
+      <p>A fairytale not for children – but for the wild-hearted, the thoughtful, the lost and free.</p>
+      <a class="btn" href="#world">Explore the World</a>
+    </header>
+
+    <section id="world">
+      <h3>About the World</h3>
+      <p>
+        Fishnini is not a fantasy to escape from life – it's one to awaken your soul. In this world, fairy tales aren’t safe, and heroes aren’t flawless.
+        Here, talking creatures hold grudges, witches run philosophy cafes, and every forest path leads deeper into the self.
+      </p>
+    </section>
+
+    <section id="realms">
+      <h3>Realms You May Wander</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>🌲 Forest of Unlearning</h4>
+          <p>Lose your memories, lose your name – and maybe find something truer.</p>
+        </div>
+        <div class="card">
+          <h4>👑 The Hollow Court</h4>
+          <p>Mask after mask, laughter without joy. What would you trade for truth?</p>
+        </div>
+        <div class="card">
+          <h4>🌊 Mirrored Lake</h4>
+          <p>Reflections you cannot lie to. Ripples that rewrite your fate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quotes">
+      <h3>Whispers from the World</h3>
+      <div class="grid">
+        <div class="card">
+          <p>“You cannot survive as they do. You are made of storms.”</p>
+        </div>
+        <div class="card">
+          <p>“Freedom isn’t escape. It’s choosing to stay where truth hurts.”</p>
+        </div>
+        <div class="card">
+          <p>“Not all monsters hide under beds. Some wear your smile.”</p>
+        </div>
+      </div> 
+    </section>
+
+    <footer>
+      © 2025 Fishnini. Dream boldly, walk softly.
+    </footer>
+
+  </body>
+</html>

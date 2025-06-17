@@ -1,0 +1,89 @@
+---
+layout: "../layouts/BaseLayout.astro"
+title: "About"
+---
+
+<section class="relative min-h-screen w-full bg-black text-white overflow-hidden font-serif">
+  <!-- Background -->
+  <img src="/images/about-hero.png" alt="Mystical Forest" class="absolute inset-0 w-full h-full object-cover z-0" />
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-purple-800/40 to-black/90 z-10 backdrop-blur-md"></div>
+
+  <!-- Animated Particles -->
+  <div class="absolute inset-0 z-20 pointer-events-none starfield mix-blend-screen"></div>
+
+  <!-- Foreground Content -->
+  <div class="relative z-30 max-w-5xl mx-auto px-6 pt-32 pb-20 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-yellow-100 drop-shadow-glow mb-8 animate-fade-in">
+      ❈ Enter the World of <span class="text-pink-300">Fishnini</span> ❈
+    </h1>
+    <p class="text-lg md:text-xl text-purple-200 leading-relaxed mb-12 animate-slide-up">
+      Beyond time and beyond memory — here, you are reborn. Foxes ink your dreams, stars murmur your forgotten name, and moonlit rivers remember where you’ve been.
+    </p>
+
+    <!-- Floating Scroll -->
+    <div class="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 border border-white/20 backdrop-blur-lg rounded-3xl p-10 shadow-fairy max-w-3xl mx-auto animate-glow-in">
+      <p class="text-white/90 text-lg leading-relaxed space-y-4">
+        ✦ Every whisper in the glade belongs to you.<br />
+        ✦ The wind is your past life’s lullaby.<br />
+        ✦ The forest didn’t find you — it remembered you.
+      </p>
+    </div>
+
+    <div class="mt-16">
+      <a href="#top" class="inline-block bg-gradient-to-r from-fuchsia-400 via-purple-500 to-amber-300 text-black font-semibold px-10 py-3 rounded-full shadow-md hover:scale-105 transition-all duration-300">
+        ✧ Back to Top ✧
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes glow-in {
+  from { opacity: 0; transform: scale(0.95); filter: blur(4px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+
+.animate-fade-in { animation: fade-in 1s ease-out forwards; }
+.animate-slide-up { animation: slide-up 1.2s ease-out forwards; }
+.animate-glow-in { animation: glow-in 1.6s ease-out forwards; }
+
+.starfield {
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 24px 24px;
+  animation: twinkle 6s ease-in-out infinite;
+  opacity: 0.05;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.04; }
+  50% { opacity: 0.10; }
+}
+
+.drop-shadow-glow {
+  text-shadow: 0 0 8px #facc15, 0 0 18px #f472b6;
+}
+.shadow-fairy {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08),
+              0 0 40px rgba(236, 72, 153, 0.12),
+              0 0 60px rgba(139, 92, 246, 0.16);
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', serif;
+}
+p {
+  font-family: 'IM Fell English', serif;
+}
+</style>
+
+<!-- Place in BaseLayout <head> -->
+<!--
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English&display=swap" rel="stylesheet">
+-->
